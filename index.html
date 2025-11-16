@@ -1,0 +1,878 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Likhith R Shetty</title>
+
+
+
+</head>
+
+<body style="background-color: beige;">
+
+  <!-- Navigation Menu -->
+  <nav class="hide-on-small-only" style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 20px;
+    background-color: #ffffff;
+    padding-top: 30px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    overflow-y: auto;
+  ">
+    <ul class="side-nav fixed section table-of-contents" style="
+      margin: 0;
+      padding: 0 px;
+      list-style: none;
+    ">
+
+     <!-- Profile Picture -->
+<li class="logo" style="margin-top: -40px; margin-bottom: 25px;">
+  <a id="logo-container"
+     aria-label="Open profile picture"
+     href="./assets/img/LRS.jpg"
+     target="_blank"
+     class="brand-logo grey-blue-text"
+     style="display: inline-block;">
+    <img 
+      src="./assets/img/LRS.jpg" 
+      alt="avatar" 
+      style="
+        width: 140px; 
+        height: 140px; 
+        object-fit: cover;
+        border-radius: 10%;
+        border: 4px solid #009688;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: block;
+        margin-left: -20px;
+      "
+      onmouseover="this.style.transform='scale(1.08)'; this.style.boxShadow='0 8px 16px rgba(0,0,0,0.4)'"
+      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 12px rgba(0,0,0,0.3)'"
+    >
+  </a>
+</li>
+
+<!-- ✅ Wrap all nav links in a container and move it down -->
+<div style="margin-top: 70px;"> <!-- increase value if you want more space -->
+
+  <!-- About -->
+  <li class="bold" style="margin: 15px 0;">
+    <a href="#about" class="waves-effect waves-dark teal-text" 
+       style="display: flex; align-items: center; color: #00796b; font-weight: 600;">
+      <i class="mdi-social-person small" style="margin-right: 8px;"></i> About
+    </a>
+  </li>
+
+  <li><hr style="border: none; border-top: 1px solid #ddd; margin: 10px 0;"></li>
+
+  <!-- Experience -->
+  <li class="bold" style="margin: 15px 0;">
+    <a href="#experience" class="waves-effect waves-dark teal-text" 
+       style="display: flex; align-items: center; color: #00796b; font-weight: 600;">
+      <i class="mdi-action-trending-up small" style="margin-right: 8px;"></i> Experience
+    </a>
+  </li>
+
+  <li><hr style="border: none; border-top: 2px solid #ddd; margin: 10px 0;"></li>
+
+  <!-- Projects -->
+  <li class="bold" style="margin: 15px 0;">
+    <a href="#projects" class="waves-effect waves-dark teal-text" 
+       style="display: flex; align-items: center; color: #00796b; font-weight: 600;">
+      <i class="mdi-av-my-library-books small" style="margin-right: 8px;"></i> Projects
+    </a>
+  </li>
+
+  <li><hr style="border: none; border-top: 2px solid #ddd; margin: 10px 0;"></li>
+
+  <!-- Skills -->
+  <li class="bold" style="margin: 15px 0;">
+    <a href="#skills" class="waves-effect waves-dark teal-text" 
+       style="display: flex; align-items: center; color: #00796b; font-weight: 600;">
+      <i class="mdi-action-assessment small" style="margin-right: 8px;"></i> Skills
+    </a>
+  </li>
+
+  <li><hr style="border: none; border-top: 2px solid #ddd; margin: 10px 0;"></li>
+
+  <!-- Education -->
+  <li class="bold" style="margin: 15px 0;">
+    <a href="#education" class="waves-effect waves-dark teal-text" 
+       style="display: flex; align-items: center; color: #00796b; font-weight: 600;">
+      <i class="mdi-social-school small" style="margin-right: 8px;"></i> Education
+    </a>
+  </li>
+
+  <li><hr style="border: none; border-top: 2px solid #ddd; margin: 10px 0;"></li>
+
+  <!-- Contact -->
+  <li class="bold" style="margin: 15px 0;">
+    <a href="#contact" class="waves-effect waves-dark teal-text" 
+       style="display: flex; align-items: center; color: #00796b; font-weight: 600;">
+      <i class="mdi-content-mail small" style="margin-right: 8px;"></i> Contact
+    </a>
+  </li>
+
+</div>
+
+
+    </ul>
+  </nav>
+</body>
+
+
+
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="col-md-9">
+          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+            <div class="caption">
+           <h2 style="
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  text-shadow:
+    1px 1px 0 #999,
+    2px 2px 0 #888,
+    3px 3px 2px rgba(0,0,0,0.6);
+  margin: 0;
+  user-select: none;
+">
+  LIKHITH R SHETTY
+</h2>
+
+
+
+
+              <h5 style="color:#f10505"><span class="typing" style="font-weight: 300; color:#000"></span></h5>
+             <h5 style="color:#000000; font-size: 28px; font-weight: bold;">
+  Associate Engineer – IT Infrastructure 
+  <span class="typing" style="font-weight: 900; color:#0e0202"></span>
+</h5>
+</h5>
+<div class="about-section">
+  <h5>
+    Specializing in enterprise-level support for Windows OS, Office 365, Active Directory, VPN configuration, and server diagnostics. 
+    Known for methodical troubleshooting, remote support excellence, and creating documentation that streamlines resolution workflows across teams.
+  </h5>
+
+  <h5>
+    Combines strong programming fundamentals with hands-on experience in Python, Java, and web technologies to automate workflows and enhance system reliability.
+  </h5>
+
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/likhith-r-shetty1507" target="_blank">
+      <button class="icon-btn linkedin">
+        <i class="fa fa-linkedin"></i>
+      </button>
+    </a>
+    <a href="https://github.com/likhithrshetty" target="_blank">
+      <button class="icon-btn github">
+        <i class="fa fa-github"></i>
+      </button>
+    </a>
+  </div>
+
+  <div class="buttons">
+    <a href="#about" class="readme">Read More</a>
+    <a href="#contact" class="contactme">Contact Me</a>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Second Section: About -->
+<section id="about" class="section scrollspy">
+  <div class="container">
+    <div class="about-card z-depth-4 hoverable">
+      <h3 class="page-title teal-text text-darken-4 about-title">About Me</h3>
+      <blockquote>
+        <h2 class="about-heading">
+          An enthusiastic tech professional with MCA and B.Sc. in Computer Science, passionate about solving problems and building smart solutions.
+        </h2>
+      </blockquote>
+      <p class="about-text">
+        A dedicated and results-driven Computer Science graduate from <strong>PES College of Engineering</strong>, 
+        with a Master's in Computer Applications and a strong passion for problem-solving and coding. Known for consistently 
+        delivering 100% effort and excellence in every task, I bring a unique blend of software development and IT infrastructure expertise.
+      </p>
+      <p class="about-text">
+        During my academic journey, I gained hands-on experience with technologies such as 
+        <strong>Python, Java, MySQL, HTML5, CSS,</strong> and machine learning algorithms, successfully completing multiple projects 
+        that showcased my analytical thinking and eagerness to learn and grow. I am especially passionate about building complex applications 
+        that address real-world challenges and create meaningful impact for users.
+      </p>
+      <p class="about-text">
+        Currently serving as an <strong>Associate Engineer – IT Infrastructure</strong>, I specialize in enterprise-level support for 
+        <strong>Windows OS, Office 365, Active Directory, VPN configuration</strong>, and server diagnostics. 
+        I’m recognized for methodical troubleshooting, remote support excellence, and creating documentation that enhances resolution workflows across teams.
+        Combining strong programming fundamentals with practical experience in automation and web technologies, I strive to improve system reliability and 
+        streamline operations through innovative solutions.
+      </p>
+      <ul class="about-list">
+        <li><b>Languages:</b> Python, Java, JavaScript, C, HTML/CSS, C#, Linux</li>
+        <li><b>Databases:</b> MySQL, SSMS</li>
+        <li><b>Ticketing Tools:</b> Zendesk</li>
+        <li><b>VPN & End point:</b> Sonic wall Gobal VPN, Sophos</li>
+        <li><b>Tools & Technologies:</b> GitHub, Visual Studio, Jupyter Notebook, Visual Paradigm, Activ Track.</li>
+      </ul>
+      <p class="about-text highlight-text">
+        Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, 
+        which provides professional development, interesting experiences and personal growth.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Third Section: Experience -->
+<section id="experience" class="section scrollspy">
+  <h3 
+  class="page-title white-text teal" 
+  style="
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #00796b; /* deep teal */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #004d40;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+  ">
+  Experience
+</h3>
+  <div class="container">
+
+
+    <!-- Latest Experience -->
+    <div class="card">
+      <div class="card-content">
+        <div class="row">
+          <div class="col s12 m2">
+            <a href="https://emeraldhotels.in/" target="_blank">
+              <img alt="em" src="./assets/img/em.jpg" class="responsive-img center-block" />
+            </a>
+          </div>
+          <div class="col s12 m10">
+            <p>
+              <span class="card-title">
+                <a href="https://emeraldhotels.in/" target="_blank" class="teal-text hoverline">Emarald</a>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="role brown-text text-darken-2">ODC Manager</div>
+        <ul>
+          <li>
+            Helps to compute the required amount of food based on the event data. The food Calculator is 
+            extremely useful in eliminating food waste, which is a major issue among event planners.
+          </li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <span>Nov 2023 - Jan 2024 | Mysore, Karnataka</span>
+      </div>
+    </div>
+
+    <!-- Second Experience -->
+    <div class="card">
+  <div class="card-content">
+    <div class="row">
+      <div class="col s12 m2">
+        <a href="https://thoughtfocus.com/careers/" target="_blank">
+          <img alt="tech-logo" src="./assets/img/TF.jpeg" class="responsive-img center-block" />
+        </a>
+      </div>
+      <div class="col s12 m10">
+        <p>
+          <span class="card-title">
+            <a href="https://thoughtfocus.com/" target="_blank" class="teal-text hoverline">Thought Focus</a>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <div class="role brown-text text-darken-2">Associate Engineer - IT Infrastructure</div>
+    <ul>
+      <li>Assisted in maintaining and monitoring IT systems, networks, and server infrastructure to ensure smooth daily operations.</li>
+      <li>Provided technical support for hardware, software, and network-related issues.</li>
+      <li>Helped implement system upgrades, security patches, and backup strategies.</li>
+      <li><b>Tools:</b> Sophos, Windows Server, Linux, Active Directory, Networking Tools, Activ Track,Office 365.</li>
+    </ul>
+  </div>
+  <div class="card-action">
+    <span>Apr 2025 - Present |  Mysuru, Karnataka</span>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
+ <!-- Fourth Section: Projects -->
+<section id="projects" class="section scrollspy">
+  <h3 
+  class="page-title white-text teal" 
+  style="
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #00796b; /* deep teal */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #004d40;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+  ">
+  Projects
+</h3>
+  <div class="container">
+    <div class="row">
+
+      <!-- Zero Corruption -->
+      <div class="col s12 m6 l4">
+        <div class="card medium project-card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Rocker Bogie Mobility System" src="./assets/img/zero.jpg" class="activator" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator black-text hoverline">Zero Corruption <i class="mdi-navigation-more-vert right"></i></span>
+            <p>A web application to control corruption.</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title black-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+            <ul>
+              <li><b>Tools:</b> Visual Studio and MySQL</li>
+              <li>Includes admin, public, and department modules.</li>
+              <li>Users can submit complaints with evidence to higher authorities.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Student Mental Health -->
+<div class="col s12 m6 l4">
+  <div class="card medium project-card">
+
+    <!-- Card Image (Activator Required) -->
+    <div class="card-image waves-effect waves-block waves-light">
+      <img alt="Student Mental Health" src="./assets/img/student.jpg" class="activator" />
+    </div>
+
+    <!-- Card Content -->
+    <div class="card-content">
+      <span class="card-title activator black-text hoverline">
+        Mental Health & Academic Performance 
+        <i class="mdi-navigation-more-vert right activator"></i>
+      </span>
+      <p>Exploring how mental health correlates with academic performance.</p>
+    </div>
+
+    <!-- Card Reveal -->
+    <div class="card-reveal">
+      <span class="card-title black-text">
+        <small>Accomplishments</small>
+        <i class="mdi-navigation-close right"></i>
+      </span>
+      <ul>
+        <li><b>Tools:</b> </li>
+        <li>Used IR sensors to track room occupancy and save energy.</li>
+        <li>Achieved up to 20% reduction in electricity usage.</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+      <!-- Hangman Game (Unique Design) -->
+      <div class="col s12 m6 l4">
+        <div class="card medium project-card hangman-highlight z-depth-4">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Hangman Game" src="./assets/img/hangman.jfif" class="activator" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator black-text hoverline">Hangman Game <i class="mdi-navigation-more-vert right"></i></span>
+
+            <p>Recreation of the classic Hangman game using Python.</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title black-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+            <ul>
+              <li><b>Tools:</b> Python</li>
+              <li>Built complex game logic and user interface.</li>
+              <li>Used smart algorithms for word selection and validation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    
+      <!--Office 365 / Microsoft 365 User Management Automation- (Unique Design) -->
+      <div class="col s12 m6 l4">
+        <div class="card medium project-card hangman-highlight z-depth-4">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="Hangman Game" src="./assets/img/MS-365.jpg" class="activator" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator black-text hoverline">Office 365 / Microsoft 365 User Management Automation<i class="mdi-navigation-more-vert right"></i></span>
+
+            <p>Automated bulk user creation, license assignment, and password reset scripts using PowerShell for Microsoft 365.</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title black-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+            <ul>
+              <li><b>Tools:</b> Office 365 </li>
+              <li>365 admin, PowerShell, identity management.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--ITAM-->
+      <div class="col s12 m6 l4">
+        <div class="card medium project-card hangman-highlight z-depth-4">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="MS OFFICE" src="./assets/img/ITAM.jpg" class="activator" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator black-text hoverline"><i class="mdi-navigation-more-vert right"></i></span>
+
+            <p>Asset Management System</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title black-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+            <ul>
+              <li><b>Tools:</b> SCCM (System Center Configuration Manager),Azure,Lansweeper, Microsoft, Excel, Power BI, Active Directory, Barcode/QR scanners, SQL databases.</li>
+              <li>An IT Asset Management (ITAM) system is a platform used to track, manage, and maintain all the technology assets within an organization. </li>
+              <li>These assets include laptops, desktops, servers, network devices, software licenses, peripherals, and any other IT equipment used by employees.</li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!---pancard tampering detection-->
+      <div class="col s12 m6 l4">
+        <div class="card medium project-card Pancard-highlight z-depth-4">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img alt="PTD" src="./assets/img/ptd.jpg" class="activator" />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator black-text hoverline">PAN Card Tampering Detection Using ML<i class="mdi-navigation-more-vert right"></i></span>
+
+            <p>Built a PAN card tampering detection system using Machine Learning and Computer Vision (CNN, OpenCV, OCR) to identify document forgery and image manipulation with high accuracy.</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title black-text"><small>Accomplishments</small><i class="mdi-navigation-close right"></i></span>
+            <ul>
+              <li><b>Tools:</b> Python
+
+OpenCV (image processing),
+
+<li>Tesseract OCR (text extraction)</li>
+
+<li>NumPy, Pandas</li>
+
+<li>Matplotlib/Seaborn (visualization)</li>
+
+ <li>Flask / Streamlit (optional for web interface)</li>
+              <li>The goal of this project is to detect whether a PAN card image has been tampered with (edited, forged, or manipulated) using Machine Learning and Computer Vision techniques.
+The system checks if important fields (Name, DOB, PAN Number, Signature, Photo) have been altered.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Fifth Section: Skills -->
+    <section id="skills" class="section scrollspy">
+      <h3 
+  class="page-title white-text teal" 
+  style="
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #00796b; /* deep teal */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+  ">
+  Skills
+</h3>
+      <div class="container">
+        <!-- Languages and Databases -->
+       <div class="container">
+
+  <!-- Card 1 -->
+  <div class="card" style="width: 1100px; margin: auto;">
+    <div class="card-content">
+      <h4 class="black-text light">Languages and Databases</h4>
+      <div class="row text-center">
+        <div class="col s4 m2 center-align">
+          <img src="./assets/img/python-logo-1-300x300.jpg" class="responsive-img">
+          <p>Python</p>
+        </div>
+        <div class="col s4 m2 center-align">
+          <img src="./assets/img/java.png" class="responsive-img">
+          <p>Java</p>
+        </div>
+        <div class="col s4 m2 center-align">
+          <img src="./assets/img/Linux.jpg" class="responsive-img">
+          <p>Linux</p>
+        </div>
+        <div class="col s4 m2 center-align">
+          <img src="./assets/img/mysql-logo-1-300x300.jpg" class="responsive-img">
+          <p>MySQL</p></div>
+          <div class="col s4 m2 center-align">
+          <img src="./assets/img/Csharp.jpg" class="responsive-img">C Sharp
+        </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+<!--web development -->
+        <!-- Card 2 -->
+  <div class="card" style="width: 1000px; margin: auto; margin-top: 20px;">
+    <div class="card-content">
+      <h4 class="black-text light">Web Development</h4>
+      <div class="row text-center">
+        <div class="col s4 m2 center-align">
+          <img src="./assets/img/html5-300x300.jpg" class="responsive-img">HTML5
+        </div>
+        <div class="col s4 m2 center-align">
+          <img src="./assets/img/css3-300x300.jpg" class="responsive-img">CSS3
+        </div>
+        <div class="col s4 m2 center-align">
+          <img src="./assets/img/javascript.png" class="responsive-img">JavaScript
+        </div>
+        <div class="col s4 m2 center-align">
+          <img src="./assets/img/bootstrap.png" class="responsive-img">Bootstrap
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+        <!-- Other Tools & Technologies -->
+        <div class="card" style="width: 1000px; margin: auto; margin-top: 20px;">
+    <div class="card-content">
+      <h4 class="black-text light">Other Tools & Technologies</h4>
+      <div class="row text-center">
+
+              <div class="col s4 m2">
+                <img alt="" src="./assets/img/git.png" class="responsive-img" />Git
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="./assets/img/vp.jpg" class="responsive-img" />Visual Paradigm
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="./assets/img/zendesk.jpg" class="responsive-img" />Zendesk
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="./assets/img/MS-365.jpg" class="responsive-img" />MS Office-365
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="./assets/img/Sophos.jpg" class="responsive-img" />Sophos Endpoint
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="./assets/img/ATK.jpg" class="responsive-img" />Activ TRack
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- Seventh Section: Education -->
+<section id="education" class="section scrollspy">
+<h3 
+  class="page-title white-text teal" 
+  style="
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #00796b; /* deep teal */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #036bc1;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+  ">
+  Education
+</h3>
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Education Card 1 -->
+      <div class="col s12 m6">
+        <div class="card hoverable z-depth-3" style="
+          border-radius: 15px;
+          background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+          min-height: 360px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <div class="card-content" style="padding: 25px;">
+            <span class="card-title">
+              <a href="https://www.pesce.ac.in/" target="_blank" 
+                 class="teal-text hoverline" 
+                 style="font-weight: 700; font-size: 1.3rem;">
+                 P.E.S College of Engineering
+              </a>
+            </span>
+            <p class="brown-text" style="margin-top: 8px;">
+              Mandya, Karnataka 
+              <span style="float: right;"><b>[2022 - 2024]</b></span>
+            </p>
+            <p style="margin-top: 12px;"><b>Degree:</b> Master of Computer Application<br>
+               <b>CGPA:</b> 8.8 / 10</p>
+            <p style="margin-top: 10px;"><b>Relevant Courseworks:</b></p>
+            <ul style="margin-left: 15px; line-height: 1.6;">
+              <li>Data Structures and Algorithms</li>
+              <li>Database Management Systems</li>
+              <li>Operating Systems</li>
+              <li>JAVA</li>
+              <li>Machine Learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Card 2 -->
+      <div class="col s12 m6">
+        <div class="card hoverable z-depth-3" style="
+          border-radius: 15px;
+          background: linear-gradient(to bottom right, #f1f8e9, #ffffff);
+          min-height: 360px;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <div class="card-content" style="padding: 25px;">
+            <span class="card-title">
+              <a href="https://niefgc.ac.in/" target="_blank" 
+                 class="teal-text hoverline" 
+                 style="font-weight: 700; font-size: 1.3rem;">
+                 NIE First Grade College
+              </a>
+            </span>
+            <p class="brown-text" style="margin-top: 8px;">
+              Mysuru, Karnataka 
+              <span style="float: right;"><b>[2019 - 2022]</b></span>
+            </p>
+            <p style="margin-top: 12px;"><b>Degree:</b> Bachelor of Science (B.Sc.)<br>
+               <b>Combination:</b> PMCs<br>
+               <b>CGPA:</b> 7.36 / 10</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    /* Hover effect for smooth lift */
+    #education .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</section>
+
+
+   <!-- Eight Section: Contact -->
+<section id="contact" class="section scrollspy full-height" style="background: linear-gradient(to right, #00c6ff, #0072ff); padding: 40px 0;">
+  <h3 
+  class="page-title white-text center-align" 
+  style="
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: 900; 
+    font-size: 3.5rem; 
+    color: #00e5ff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 
+      3px 3px 0 #005f73,
+      6px 6px 0 #0a9396,
+      9px 9px 10px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+  ">
+  Contact
+</h3>
+
+  <div class="container">
+    <div class="row" style="justify-content: center;">
+
+      <!-- Email Card -->
+      <div class="col s12 m4">
+        <div class="card hoverable z-depth-4" style="border-radius: 12px; background: #ffeaea; padding: 20px; text-align: center;">
+  <a aria-label="Email me" href="mailto:likhithrshetty@gmail.com" target="_blank" style="text-decoration: none;">
+    <i class="fa fa-envelope fa-2x" style="color: #d93025; margin-bottom: 8px;"></i>
+    <p style="color: #333; font-weight: 500; font-size: 0.85rem; margin: 0;">likhithrshetty@gmail.com</p>
+  </a>
+</div>
+      </div>
+
+     <!-- GitHub Card -->
+<div class="col s12 m4">
+  <div class="card hoverable z-depth-4" style="border-radius: 12px; background: #f5f5f5; padding: 20px; text-align: center;">
+    <a 
+      aria-label="View me on GitHub" 
+      href="https://github.com/likhithrshetty" 
+      target="_blank" 
+      style="text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      
+      <i class="fa fa-github fa-2x" style="color: #000; margin-bottom: 8px;"></i>
+      
+      <p style="color: #333; font-weight: 500; font-size: 0.85rem; margin: 0; text-transform: lowercase;">
+        github.com/likhithrshetty
+      </p>
+    </a>
+  </div>
+</div>
+
+
+      <!-- LinkedIn Card -->
+<div class="col s12 m4">
+  <div class="card hoverable z-depth-4" style="
+    border-radius: 12px; 
+    background: #e3f2fd; 
+    padding: 20px; 
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+  ">
+    <a 
+      aria-label="View me on LinkedIn" 
+      href="https://www.linkedin.com/in/likhith-r-shetty1507/" 
+      target="_blank" 
+      style="text-decoration: none; display: flex; flex-direction: column; align-items: center;">
+      
+      <!-- Centered Icon -->
+      <div style="
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        width: 100%; 
+        margin-bottom: 10px;">
+        <i class="fa fa-linkedin fa-2x" style="color: #0077b5;"></i>
+      </div>
+
+      <!-- URL Text -->
+      <p style="
+        color: #333; 
+        font-weight: 500; 
+        font-size: 0.85rem; 
+        margin: 0; 
+        text-transform: lowercase;
+        word-break: break-word;
+        text-align: center;
+      ">
+        linkedin.com/in/likhith-r-shetty1507
+      </p>
+    </a>
+  </div>
+</div>
+
+<!-- Resume Card -->
+<div class="col s12 m4" style="margin: 0 auto; float: none;">
+  <div class="card hoverable z-depth-4" style="border-radius: 15px; background: #fff3e0; padding: 20px; text-align: center;">
+    <a 
+      aria-label="View and download my Resume" 
+      href="assets/resume" 
+      target="_blank" 
+      download="likhith Shetty_resume.pdf"
+      style="text-decoration: none;"
+    >
+      <i class="fa fa-file-pdf-o fa-2x" style="color: #d84315; margin-bottom: 2px;"></i>
+      <p style="
+        color: #333; 
+        font-weight: 700; 
+        font-size: 1rem; 
+        margin: 0; 
+        text-transform: none;
+        letter-spacing: 1px;
+      ">
+        MY RESUME
+      </p>
+    </a>
+  </div>
+</div>
+
+
+
+  <!-- typed.js -->
+  <script src="./assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Technology Enthusiast", "Adaptable and Growth-Oriented", "Self-Motivated Learner in application development and infrastructure support."],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
+
+
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
+</body>
+
+</html>
